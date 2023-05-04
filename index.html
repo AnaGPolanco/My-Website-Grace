@@ -7,6 +7,18 @@
     <title>myWebsite</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script>
+        const navbar = document.querySelector('.navbar');
+    
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) {
+                navbar.classList.add('navbar-sticky');
+            } else {
+                navbar.classList.remove('navbar-sticky');
+            }
+        });
+    </script>
+    
 </head>
 <body>
     <header>
