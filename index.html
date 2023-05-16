@@ -7,17 +7,8 @@
     <title>myWebsite</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script>
-        const navbar = document.querySelector('.navbar');
-    
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 0) {
-                navbar.classList.add('navbar-sticky');
-            } else {
-                navbar.classList.remove('navbar-sticky');
-            }
-        });
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/main.js"></script>
     
 </head>
 <body>
@@ -118,7 +109,7 @@
 
         <div class="box">
              
-            <h3>lorem</h3>
+            <h3>Github</h3>
             <p>Lorem sit amet</p>
         </div>  
 
@@ -138,21 +129,21 @@
          
         <div class="row">
             <div class="form-container">
+                
             
-                <form action="">
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Correo">
-                    <input type="number" placeholder="Telefono">
-                    <textarea cols="15" rows="5"placeholder="Mensaje"></textarea>
-                    <input type="submit" value="Enviar">
+                <form onsubmit="sendEmail(); reset(); return false;">
+
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Email id" required>            
+                    <input type="text" id="phone" placeholder="Phone no." required>
+                    <textarea id="message" rows="4" placeholder="leave your message here"></textarea>
+                    <button type="submit">Send</button>
+
                 </form>
+
             </div>
         </div>
-    </section>
-
-
-
-
-    
+ </section>
+ 
 </body>
 </html>
