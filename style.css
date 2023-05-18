@@ -27,6 +27,7 @@ body {
 
 /* header navbar */
 
+ 
 header {
     width: 100%;
     background: #2a2a2a;
@@ -38,6 +39,7 @@ header {
     z-index: 1000;
     transition: .2s;
     position: unset;
+    
 }
 
 .navbar ul {
@@ -229,6 +231,11 @@ button:hover {
     border: .2rem solid #f9580e;
   }
 
+/*/back to top/*/
+ 
+
+
+
 
 /*section_gallery*/
 
@@ -243,8 +250,12 @@ button:hover {
     text-align: center;
   
 }
-
- 
+/*/
+.gallery h2 a:hover {
+    color: #ffffff;
+    
+}
+/*/
 
 .gallery .box-container {
     width: 85%;
@@ -253,9 +264,13 @@ button:hover {
     margin:  0 auto;
     padding: 4rem 0;
     flex-wrap: wrap;
+
 }
 
+
+
 .gallery .box-container .box {
+    position: relative; 
     background: #171717;
     height: 25rem;
     width: 25rem;
@@ -264,6 +279,19 @@ button:hover {
     border-radius: 1rem;
 }
 
+.gallery .box-container .box img.galeria-fotos {
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    max-width: 100%; 
+    max-height: 100%;  
+    border-radius: 1rem;
+}
+
+
+
+
 .gallery .box-container .box i {
     height: 10rem;
     width: 10rem;
@@ -271,21 +299,35 @@ button:hover {
     text-align: center;
     color: #f9580e;
     background: none;
-    margin-top: 2rem;
+    
     font-size: 5rem;
 }
 
 .gallery .box-container .box h3 {
     font-size: 2rem;
     color: #ffc246;
+    margin-top: -5rem;
+    text-align: center;
+    color: #f9580e;
+    background: none;
 }
-
+ 
 .gallery .box-container .box p {
-    font-size: 1.5rem;
-    color: #fff;
-    padding: 1rem 0;
+    font-size: 2rem;
+    color: #ffc246;
+    margin-top: 20rem;
+    text-align: center;
+    color: #f9580e;
+    background: none;
+   
 }
-
+ 
+.gallery .box-container .galeria-fotos{
+    height: 23rem;
+    width: 23rem;
+    margin-bottom: 30rem;
+    
+}
  
 
 /*section_Contact*/
@@ -314,6 +356,8 @@ button:hover {
     justify-content: center;
     padding: 5rem 0;
     text-align: center;
+    padding-bottom: 20px;
+    
 }
 
 .contact .row .form-container {
@@ -374,6 +418,8 @@ section .contact button:hover {
 }
 
 
+
+/*/footer back to top button/*/
 
 
 
