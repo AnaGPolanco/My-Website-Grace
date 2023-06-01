@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     text-decoration: none;
-    background-color: #201f1f;
+    background-color: #ffffff;
     color: #fff;
 
     outline: none;
@@ -30,15 +30,15 @@ body {
  
 header {
     width: 100%;
-    background: #2a2a2a;
+    background: #fb589f;
     
-    display: flexbox;
+     
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000;
     transition: .2s;
-    position: unset;
+    position: fixed;
     
 }
 
@@ -63,7 +63,8 @@ header {
 }
  
 .navbar a:hover {
-    color: #ffd700;
+    color: #f5f112;
+    font-weight: bolder;
 }
 
 
@@ -85,20 +86,18 @@ main {
 .block {
     flex: 1;
     text-align: center;
+    margin-top: 3%;
 }
 
 
 .block img {
     max-width: 100%;
     border-radius: 50%;
-    border: 5px solid #ffd700;
+    border: 5px solid #fefa39;
     width: 250px;
     height: 250px;
 }
-.flor {
-   
-    
-  }
+ 
  
 
 .block h1 {
@@ -106,6 +105,7 @@ main {
     margin: 0;
     margin-top: 20px;
     text-align: center;
+    color: #fb589f;
 }
 
 
@@ -113,7 +113,9 @@ main {
     font-size: 30px;
     margin: 10px 0;
     padding-top: 5px;
-    color: #ffd700;
+    color: rgb(55, 54, 54);
+    font-weight: bold;
+     
 }
 
 
@@ -125,14 +127,14 @@ main {
 
 
 .icons a {
-    color: #fff;
+    color: #ffffff;
     font-size: 36px;
     margin-right: 10px;
     margin: 10px;
     text-decoration: none;
 }
 .icons a:hover {
-    color: #ffd700;
+    color: #00ff15;
 }
 
 
@@ -151,8 +153,8 @@ main {
     line-height: 4.2rem;
     text-align: center;
     border-radius: 50%;
-    color: #de9400;
-    border: .2rem solid #ffc246;
+    color: #fb589f;
+    border: .2rem solid #f81897;
     font-size: 2rem;
     margin: 5px;
     transition: .2s linear;
@@ -160,9 +162,10 @@ main {
 }
 
 .icons .icons a:hover {
-    color: #fff;
-    background: #f9580e;
-    border-color: #f9580e;
+    color: #fb589f;
+    background: #f9eb27;
+    border-color: #f9f90e;
+    font-size: 3rem;
 }
 
 
@@ -211,8 +214,8 @@ main {
   }
  
 button {
-    background-color: #ffd700;
-    color: #2b2b2b;
+    background-color: #fb589f;
+    color: #ffffff;
     padding: 10px 30px;
     border: none;
     border-radius: 40px;
@@ -222,13 +225,15 @@ button {
 
     height: 5rem;
     width: 17rem;
-    cursor: pointer 1sg;
+    cursor: pointer 1s;
   }
  
 button:hover {
-    background: none;
-    color: #f9580e;
-    border: .2rem solid #f9580e;
+    color: #fb589f;
+    background: #f9eb27;
+    border-color: #f9f90e;
+    font-size: 27px;
+
   }
 
 /*/back to top/*/
@@ -244,7 +249,7 @@ button:hover {
     font-size: 30px;
     margin: 10px 0;
     padding-top: 5px;
-    color: #ffd700;
+    color: #f551bb;
     justify-content: center;
     padding: 50px;
     text-align: center;
@@ -271,7 +276,7 @@ button:hover {
 
 .gallery .box-container .box {
     position: relative; 
-    background: #171717;
+    background: #353535;
     height: 25rem;
     width: 25rem;
     margin: 3.5rem 2rem;
@@ -297,7 +302,7 @@ button:hover {
     width: 10rem;
     line-height: 8rem;
     text-align: center;
-    color: #f9580e;
+    color: #f551bb;
     background: none;
     
     font-size: 5rem;
@@ -305,10 +310,10 @@ button:hover {
 
 .gallery .box-container .box h3 {
     font-size: 2rem;
-    color: #ffc246;
+    color: #f551bb;
     margin-top: -5rem;
     text-align: center;
-    color: #f9580e;
+    color:#f551bb;
     background: none;
 }
  

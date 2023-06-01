@@ -1,5 +1,3 @@
-
-
 function sendEmail(){
     
     Email.send({
@@ -16,8 +14,4 @@ function sendEmail(){
 );
 
 }
-
-
-
-
 
